@@ -30,6 +30,7 @@ namespace Riot_API
 
         private void Search_Click(object sender, EventArgs e)
         {
+            MatchList.Items.Clear();
             riotApi = RiotApi.NewInstance(APIkeynumber);
             summoner = riotApi.TftSummonerV1.GetBySummonerName(MingweiSamuel.Camille.Enums.Region.NA, entername);
             var matches = riotApi.TftMatchV1.GetMatchIdsByPUUID(MingweiSamuel.Camille.Enums.Region.Americas, summoner.Puuid);
