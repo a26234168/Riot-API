@@ -183,7 +183,7 @@ namespace Riot_API
             // 
             // GoldTextBox
             // 
-            this.GoldTextBox.Location = new System.Drawing.Point(306, 19);
+            this.GoldTextBox.Location = new System.Drawing.Point(306, 20);
             this.GoldTextBox.Name = "GoldTextBox";
             this.GoldTextBox.Size = new System.Drawing.Size(127, 20);
             this.GoldTextBox.TabIndex = 58;
@@ -220,14 +220,14 @@ namespace Riot_API
             // 
             // RoundDeadTextBox
             // 
-            this.RoundDeadTextBox.Location = new System.Drawing.Point(341, 65);
+            this.RoundDeadTextBox.Location = new System.Drawing.Point(341, 64);
             this.RoundDeadTextBox.Name = "RoundDeadTextBox";
             this.RoundDeadTextBox.Size = new System.Drawing.Size(91, 20);
             this.RoundDeadTextBox.TabIndex = 60;
             // 
             // TimeEliminatedTextBox
             // 
-            this.TimeEliminatedTextBox.Location = new System.Drawing.Point(375, 196);
+            this.TimeEliminatedTextBox.Location = new System.Drawing.Point(379, 194);
             this.TimeEliminatedTextBox.Name = "TimeEliminatedTextBox";
             this.TimeEliminatedTextBox.Size = new System.Drawing.Size(54, 20);
             this.TimeEliminatedTextBox.TabIndex = 66;
@@ -236,7 +236,7 @@ namespace Riot_API
             // 
             this.PlayerLevel.AutoSize = true;
             this.PlayerLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.PlayerLevel.Location = new System.Drawing.Point(188, 98);
+            this.PlayerLevel.Location = new System.Drawing.Point(189, 104);
             this.PlayerLevel.Name = "PlayerLevel";
             this.PlayerLevel.Size = new System.Drawing.Size(144, 26);
             this.PlayerLevel.TabIndex = 61;
@@ -254,14 +254,14 @@ namespace Riot_API
             // 
             // PlayerLevelTextBox
             // 
-            this.PlayerLevelTextBox.Location = new System.Drawing.Point(338, 104);
+            this.PlayerLevelTextBox.Location = new System.Drawing.Point(341, 109);
             this.PlayerLevelTextBox.Name = "PlayerLevelTextBox";
             this.PlayerLevelTextBox.Size = new System.Drawing.Size(91, 20);
             this.PlayerLevelTextBox.TabIndex = 62;
             // 
             // PlacementTextBox
             // 
-            this.PlacementTextBox.Location = new System.Drawing.Point(390, 153);
+            this.PlacementTextBox.Location = new System.Drawing.Point(394, 152);
             this.PlacementTextBox.Name = "PlacementTextBox";
             this.PlacementTextBox.Size = new System.Drawing.Size(39, 20);
             this.PlacementTextBox.TabIndex = 64;

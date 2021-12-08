@@ -11,8 +11,6 @@ namespace Riot_API
         private RiotApi riotApi;
         private Summoner summoner;
         private Match selectmatch;
-
-
         private string entername;
         private string APIkeynumber;
         public TFTAPI()
@@ -40,14 +38,12 @@ namespace Riot_API
                 MatchList.Items.Add(match);
             }
 
-
         }
 
         private void MatchList_SelectedIndexChanged(object sender, EventArgs e)
         {
             ParticipantList.Items.Clear();
-            selectmatch = riotApi.TftMatchV1.GetMatch(MingweiSamuel.Camille.Enums.Region.Americas, (string)MatchList.SelectedItem);
-            
+            selectmatch = riotApi.TftMatchV1.GetMatch(MingweiSamuel.Camille.Enums.Region.Americas, (string)MatchList.SelectedItem);            
             foreach (Participant participant in selectmatch.Info.Participants)
             {
                 ParticipantList.Items.Add(participant);
@@ -58,8 +54,11 @@ namespace Riot_API
         {
             
             var SelectedParticipant = (Participant)ParticipantList.SelectedItem;
+
             long gametime = (long)SelectedParticipant.TimeEliminated;
+
             TimeSpan t = TimeSpan.FromSeconds(gametime);
+
             GoldTextBox.Text = SelectedParticipant.GoldLeft.ToString();
             RoundDeadTextBox.Text = SelectedParticipant.LastRound.ToString();
             PlayerLevelTextBox.Text = SelectedParticipant.Level.ToString();
@@ -67,18 +66,16 @@ namespace Riot_API
             TimeEliminatedTextBox.Text = string.Format("{0:D2}m:{1:D2}s", t.Minutes, t.Seconds);
             Unitlist.Items.Clear();
             Traitlist.Items.Clear();
+
             foreach (Unit unit in SelectedParticipant.Units)
             {
                 Unitlist.Items.Add(unit.CharacterId);
             }
+
             foreach (Trait trait in SelectedParticipant.Traits)
             {
                 Traitlist.Items.Add(trait.Name);
             }
-
-
-
         }
-
     }
 }
